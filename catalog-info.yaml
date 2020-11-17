@@ -1,15 +1,56 @@
-
 apiVersion: backstage.io/v1alpha1
+manifestVersion: 0.0.2
 kind: Component
 metadata:
-  name: poc-lib
+  id: 1
+  namespace: atlas
+  name: atlas-backend
   description: |
-    lib is an open-source developer portal that puts the developer experience first.
+    Backend service that implements the Frobs API, as defined
+    in [the Frobs RFC](https://example.com/spec/frob.html).
+  gui: true
+  isSox: true
+  pci: pci-extended  
+  processPersonalData: true
+  authentication: idm 
+  authorization: idm
+  pagerduty: pd-service-name
+  operationalDate: abril
+  infraestructure:
+    datacenter:
+      - server: cloud-name-1
+        ip: 129.192.938
+        so: linux
+      - server: cloud-name-2
+        ip: 129.192.939
+        so: linux
+    cloud:
+      - project: project-name-1
+        project_id: project-id
+      - project: project-name-2
+        project_id: project-id
+  pipeline: 
+    url: url-pipeline.com.br
+    project: project-name
+    pipeline: pipeline-name
+  databases:
+    - name: db-name-1
+      sgbd: mongodb
+    - name: db-name-2
+      sgbd: mysql
+  labels:
+    system: internal-tool
+    lifecycle: production
   annotations:
-    github.com/project-slug: spotify/backstage
-    backstage.io/techdocs-ref: github:https://github.com/poc-github-app/poc-backstage.git
-    lighthouse.com/website-url: https://backstage.io
+    github.com/project-slug: stone-payments/atlas-backend 
+  tags:
+    - python
+    - poc
+  links:
+    - https://important-link.com.br
 spec:
-  type: library
-  owner: poc-github-app
-  lifecycle: experimental
+  type: website
+  lifecycle: production
+  owner: project-python@example.com
+  implementsApis: 
+    - python-api
