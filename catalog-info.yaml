@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-manifestVersion: 0.0.1
+manifestVersion: 0.0.2
 kind: Component
 metadata:
   id: 1
@@ -10,7 +10,7 @@ metadata:
     in [the Frobs RFC](https://example.com/spec/frob.html).
   gui: true
   isSox: true
-  pci: pci-extended  
+  pci: true  
   processPersonalData: true
   authentication: idm 
   authorization: idm
