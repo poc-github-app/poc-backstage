@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+manifestVersion: 0.0.1
+kind: Component
+metadata:
+  name: AccessoryObligationsGateway
+spec:
+  type: website
+  lifecycle: production
+  owner: fis-financialsystems
+  pipeline:
+    project: fin-controllership
+    pipeline: AccessoryObligationsGateway-CD
+    url: https://stonepagamentos.visualstudio.com/fin-controllership/_release?releaseId=4091&_a=release-summary
