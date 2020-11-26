@@ -1,20 +1,38 @@
 apiVersion: backstage.io/v1alpha1
-manifestVersion: 0.0.1
 kind: Component
 metadata:
-  namespace: atlas
+  name: atlas-proxy
+  description: Atlas Proxy
+  tags:
+    - python
+    - website
+spec:
+  type: website
+  lifecycle: production
+  owner: tools@example.com
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
   name: atlas-backend
+  description: Atlas backend
+  tags:
+    - python
+    - website
+spec:
+  type: website
+  lifecycle: production
+  owner: tools@example.com
 ---
 apiVersion: backstage.io/v1alpha1
-manifestVersion: 0.0.1
 kind: Component
 metadata:
-  namespace: atlas
   name: atlas-frontend
----
-apiVersion: backstage.io/v1alpha1
-manifestVersion: 0.0.1
-kind: Component
-metadata:
-  namespace: atlas
-  name: atlas-queue
+  description: Atlas frontend
+  tags:
+    - python
+    - website
+spec:
+  type: website
+  lifecycle: production
+  owner: tools@example.com
