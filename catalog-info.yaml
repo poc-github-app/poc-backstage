@@ -22,7 +22,6 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: tools@example.com
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -35,4 +34,3 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: tools@example.com
