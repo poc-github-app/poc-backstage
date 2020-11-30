@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: atlas-proxy
+  name: app-proxy
   description: Atlas Proxy
   tags:
     - python
@@ -14,7 +14,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: atlas-backend
+  name: app-backend
   description: Atlas backend
   tags:
     - python
@@ -27,7 +27,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: atlas-frontend
+  name: app-frontend
   description: Atlas frontend
   tags:
     - python
