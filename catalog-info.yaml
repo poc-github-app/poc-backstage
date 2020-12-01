@@ -6,7 +6,7 @@ metadata:
   tags:
     - python
     - website
-    - c#
+    - NET Core
 spec:
   type: website
   lifecycle: production
