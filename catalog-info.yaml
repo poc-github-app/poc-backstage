@@ -1,39 +1,47 @@
 apiVersion: backstage.io/v1alpha1
+manifestVersion: 0.0.1
 kind: Component
 metadata:
-  name: app-proxy
-  description: Atlas Proxy
+  namespace: atlas
+  name: atlas-backend
+  description: |
+    Resource manifest app é uma ferramenta para identificar, carregar 
+    e salvar informações dos manifests no bigquery.
+  compliance:
+    gui: false
+    sox: none
+    pci: pci-extended
+    processPersonalData: false
+  labels:
+    lifecycle: production
   tags:
     - python
-    - website
-    - NET Core
+    - poc
+  links:
+    - https://important-link.com.br
 spec:
   type: website
   lifecycle: production
-  owner: team@email.com
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: app-backend
-  description: Atlas backend
-  tags:
-    - python
-    - website
-spec:
-  type: website
-  lifecycle: production
-  owner: team@email.com
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: app-frontend
-  description: Atlas frontend
-  tags:
-    - python
-    - website
-spec:
-  type: website
-  lifecycle: production
-  owner: team@email.com
+  owner: project-python@example.com
+  authentication: idm
+  authorization: idm
+  pagerduty: pd-service-named
+  operationalDate: abril
+  infraestructure:
+    datacenter:
+      - qts_atlanta:
+          host_pattern: cbk-v-ingp-*
+    cloud:
+      - azure:
+          subscription: ...
+      - google:
+          project: ...
+  pipeline:
+    url: url-pipeline.com.br
+    project: project-name
+    pipeline: pipeline-name
+  databases:
+    - name: db-name-1
+      sgbd: mongodb
+    - name: db-name-2
+      sgbd: mysql
