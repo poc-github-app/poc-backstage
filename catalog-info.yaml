@@ -1,13 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 metadata:
-  namespace: atlas
   name: app-Hermes
   description: description
-  labels:
-    lifecycle: production
-  tags:
-    - python
-    - poc
 spec:
   type: website
   lifecycle: production
