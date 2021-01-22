@@ -2,9 +2,8 @@ apiVersion: backstage.io/v1alpha1
 manifestVersion: 0.0.1 
 metadata:
   namespace: atlas
-  name: "app-Hermes"
-  description: |
-    description
+  name: app-Hermes
+  description: description
   labels:
     lifecycle: production
   tags:
