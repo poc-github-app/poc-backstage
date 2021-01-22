@@ -13,12 +13,3 @@ spec:
   type: website
   lifecycle: production
   owner: project-python@example.com
-  pipeline:
-    url: url-pipeline.com.br
-    project: project-name
-    pipeline: pipeline-name
-  databases:
-    - name: db-name-1
-      sgbd: mongodb
-    - name: db-name-2
-      sgbd: mysql
