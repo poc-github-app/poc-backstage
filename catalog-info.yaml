@@ -2,10 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: app-hermes
-  description: Searcher
+  description: app hermes
   tags:
     - go
+    - website
 spec:
-  type: service
-  lifecycle: production
-  owner: @email.com
+  type: website
+  lifecycle: production 
