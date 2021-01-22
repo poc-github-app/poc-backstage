@@ -1,16 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: app-Hermes
-  description: The place to be, for great artists
-  labels:
-    system: public-websites
-  annotations:
-    example.com/service-discovery: artistweb
-    circleci.com/project-slug: github/example-org/artist-website
+  name: [app]hermes
+  description: Searcher
   tags:
-    - java
+    - go
 spec:
-  type: website
+  type: service
   lifecycle: production
-  owner: artist-relations-team
+  owner: user:guest
