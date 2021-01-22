@@ -9,8 +9,6 @@ metadata:
   tags:
     - python
     - poc
-  links:
-    - https://important-link.com.br
 spec:
   type: website
   lifecycle: production
