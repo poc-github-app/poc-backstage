@@ -1,11 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: app-hermes
-  description: app hermes
-  tags:
-    - go
-    - website
+  name: catalog-info.yaml
+  annotations:
+    githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
-  type: website
-  lifecycle: production 
+  type: other
+  lifecycle: unknown
