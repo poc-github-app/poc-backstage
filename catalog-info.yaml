@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: poc-backstage
+  description: poc-teste
   annotations:
     githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
