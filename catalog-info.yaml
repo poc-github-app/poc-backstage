@@ -8,4 +8,5 @@ metadata:
     githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
   type: other
+  owner: gabi
   lifecycle: production
