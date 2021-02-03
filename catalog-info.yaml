@@ -1,10 +1,16 @@
 apiVersion: backstage.io/v1alpha1
+manifestVersion: 0.0.1
 kind: Component
 metadata:
   name: poc-backstage
   description: poc-teste
+  compliance:
+    gui: false
+    pci: pci-extended
+    sox: none
   annotations:
     githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
-  type: other
-  lifecycle: unknown
+  type: service
+  owner: [gabi@stone.com.br]
+  lifecycle: production
