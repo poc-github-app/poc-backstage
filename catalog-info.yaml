@@ -12,5 +12,5 @@ metadata:
     githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
   type: service
-  owner: [gabi@stone.com.br, luanda@stone.com.br, lucas@stone.com.br]
+  owner: gabi@stone.com.br
   lifecycle: production
