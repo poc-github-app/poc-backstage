@@ -7,6 +7,6 @@ metadata:
   annotations:
     githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
-  type: other
+  type: service
   owner: gabi
   lifecycle: production
