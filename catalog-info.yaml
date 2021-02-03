@@ -4,6 +4,10 @@ kind: Component
 metadata:
   name: poc-backstage
   description: poc-teste
+  compliance:
+    gui: false
+    pci: pci-extended
+    sox: none
   annotations:
     githubusercontent.com/project-slug: poc-github-app/poc-backstage/main/catalog-info.yaml
 spec:
